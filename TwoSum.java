@@ -15,3 +15,4 @@ class Solution {
         throw new IllegalArgumentException("no two sums equal to target");
     }
 }
+
