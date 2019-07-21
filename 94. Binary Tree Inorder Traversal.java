@@ -41,7 +41,7 @@ class Solution {
         return res;
     }
     
-//    public List<Integer> inorderTraversal(TreeNode root) {
+//    public List<Integer> preorderTraversal(TreeNode root) {
 //        if (root == null) {
 //            return list;
 //        }
