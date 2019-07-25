@@ -1,4 +1,34 @@
 class Solution {
+//     public boolean isValidSudoku(char[][] board) {
+        
+//         int dotAsInt = '.' - '0' - 1;
+        
+//         int[][] rows = new int[9][9];
+//         int[][] cols = new int[9][9];
+//         int[][] nines = new int[9][9];
+        
+//         for(int r = 0; r < 9; r++) {
+//             for (int c = 0; c < 9; c++) {
+//                 int chInt = board[r][c] - '0' - 1;
+//                 if (chInt == dotAsInt)
+//                     continue;
+//                 rows[r][chInt]++;
+//                 if (rows[r][chInt] > 1)
+//                     return false;
+//                 cols[c][chInt]++;
+//                 if (cols[c][chInt] > 1)
+//                     return false;
+                
+//                 int nineIndex = (r/3) * 3 + (c/3);
+//                 nines[nineIndex][chInt]++;
+//                 if (nines[nineIndex][chInt] > 1)
+//                     return false;
+//             }  
+//         }
+//         return true;
+//     }
+    
+    
     public boolean isValidSudoku(char[][] board) {
         // check row wise
         for(int i = 0; i < board.length; i++) {
