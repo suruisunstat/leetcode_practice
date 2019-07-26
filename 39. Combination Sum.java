@@ -43,3 +43,23 @@ class Solution {
 }
 
 // Using backtract and hashset, not very efficient though 
+
+// Below is more efficient: not using hashset, sort arrays first, remove the duplicate computation 
+//     List<List<Integer>> ans = new ArrayList();
+//     public List<List<Integer>> combinationSum(int[] candidates, int target){
+//         Arrays.sort(candidates);
+//         backtrack(new ArrayList<Integer>(), candidates, target, 0);
+//         return ans;
+//     }
+    
+//     public void backtrack(List<Integer> sub_list, int[] nums, int target, int begin){
+//         if(target == 0){
+//             ans.add(new ArrayList<Integer>(sub_list));
+//             return;
+//         }
+//         for(int i = begin; i < nums.length && target >= nums[i]; i++){
+//             sub_list.add(0, nums[i]);
+//             backtrack(sub_list, nums, target - nums[i], i);
+//             sub_list.remove(0);
+//         }
+//     }
