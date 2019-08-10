@@ -44,7 +44,7 @@ class Solution {
         }
         
         for (int j = start; j < nums.length; j++) {
-            if (j != start && nums[j] == nums[j-1]) continue;
+            if (j != start && nums[j] == nums[j-1]) continue; // each time when we go to this line, it is selecting an element for a new individual depth, thus this element should not be duplicated 
             temp.add(nums[j]);
             dfs(res,temp,nums,depth,j+1);
             temp.remove(temp.size()-1);
