@@ -1,3 +1,5 @@
+2019/08/10
+
 ### Bitwise Operator
 
 a: 00111100 (60)
@@ -9,4 +11,5 @@ Right shift 2 digits: 60 -> 15 => 60 / (2 ^ 2)
 ^ bit wise XOR: (if one is 0 the other is 1, return 1; else return 0)
 a ^ b = 00110001
 
-
+the convertion between GREY code and binary number:
+https://www.cnblogs.com/grandyang/p/4315607.html
