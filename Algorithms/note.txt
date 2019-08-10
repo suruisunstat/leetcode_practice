@@ -1,0 +1,12 @@
+### Bitwise Operator
+
+a: 00111100 (60)
+b: 00001101 (13)
+
+left shift 2 digits: 60 -> 240 => 60 * 2 ^2
+Right shift 2 digits: 60 -> 15 => 60 / (2 ^ 2)
+
+^ bit wise XOR: (if one is 0 the other is 1, return 1; else return 0)
+a ^ b = 00110001
+
+
