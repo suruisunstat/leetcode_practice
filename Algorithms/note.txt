@@ -13,3 +13,7 @@ a ^ b = 00110001
 
 the convertion between GREY code and binary number:
 https://www.cnblogs.com/grandyang/p/4315607.html
+
+
+Leetcode 90:
+if(i!=start&&nums[i]==nums[i-1])continue;//剪枝去重复，对于搜索的任何一层决不能在本层出现重复
