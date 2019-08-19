@@ -57,6 +57,18 @@ class Solution {
     }
 }
 
+//超强解法 recursion
+    public Node connect(Node root){
+        if (root == null) return null;
+        if (root.left != null) root.left.next = root.right;
+        if (root.right != null) root.right.next = root.next != null ? root.next.left : null;
+        connect(root.left);
+        connect(root.right);
+        return root;
+    }
+    
+}
+
 // time complexity: O(N)
 // Space complexity: O(N)
 
