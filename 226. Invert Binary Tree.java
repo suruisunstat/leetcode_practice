@@ -17,4 +17,24 @@ class Solution {
         invertTree(root.right);
         return root;
     }
+    
+    public TreeNode invertTree(TreeNode root) {
+       // iterative
+        if (root == null) return null;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            TreeNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+        }
+        return root;
+    }
 }
