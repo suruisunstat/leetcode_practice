@@ -24,3 +24,18 @@ class Solution {
 }
 
 // Time: O(V+E)
+
+
+// class Solution {
+    
+//     private int sum = 0;
+    
+//     public int sumOfLeftLeaves(TreeNode root) {
+//         if (root == null) return sum;
+//         if (root.left != null && root.left.left == null && root.left.right == null) {
+//             sum = sum + root.left.val;
+//         }
+//         sumOfLeftLeaves(root.left);
+//         sumOfLeftLeaves(root.right);
+//         return sum;
+//     }
