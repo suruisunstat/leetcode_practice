@@ -21,3 +21,7 @@ class Solution(object):
             heapq.heappush(free_rooms, intervals[i][1])
             
         return len(free_rooms)
+
+    
+    ## Time: O(nlogn)
+    ## Space: O(n)
