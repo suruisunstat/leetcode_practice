@@ -25,3 +25,21 @@ class Solution(object):
     
     ## Time: O(nlogn)
     ## Space: O(n)
+
+    class Solution(object):
+    def minMeetingRooms(self, intervals):
+        intervals_start = [i[0] for i in intervals]
+        intervals_start = sorted(intervals_start)
+        intervals_end = [i[1] for i in intervals]
+        intervals_end = sorted(intervals_end)
+        
+        j = 0
+        num_rooms = 0
+        
+        for i in range(len(intervals_start)):
+            if intervals_start[i] < intervals_end[j]:
+                num_rooms = num_rooms + 1
+            else:
+                j = j + 1
+        
+        return num_rooms
