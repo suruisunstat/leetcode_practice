@@ -116,7 +116,30 @@ class Solution(object):
     
     
     # delete is O(n)
-                
+  def trimBST(self, root, L, R):
+        if not root:
+            return root
+        
+        while root.val < L or root.val > R:
+            if root.val < L:
+                root = root.right
+            if root.val > R:
+                root = root.left 
+        
+        dummy = root
+        
+        while dummy:
+            while dummy.left and dummy.left.val < L:
+                dummy.left = dummy.left.right
+            dummy = dummy.left
+        
+        dummy = root
+        while dummy:
+            while dummy.right and dummy.right.val > R:
+                dummy.right = dummy.right.left
+            dummy = dummy.right
+        
+        return root 
             
                 
         
