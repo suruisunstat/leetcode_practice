@@ -82,3 +82,29 @@ class Trie(object):
 # obj.insert(word)
 # param_2 = obj.search(word)
 # param_3 = obj.startsWith(prefix)
+
+
+"""
+    def searchLongestPrefix(word):
+        current = self.root
+        prefix = ""
+        for w in word:
+            if current.children.get(w) == None:
+                return prefix
+            elif current.isword = True: # need more examination 
+                prefix = prefix + w
+                return prefix
+            current = current.children.get(w)
+            prefix = prefix + w
+        return prefix 
+        
+    def longestCommonPrefix(q, strs):
+        if strs == []:
+            return ""
+        if len(strs) == 1:
+            return strs[0]
+        trie = Trie()
+        for s in strs:
+            trie.insert(s)
+        return trie.searchLongestPrefix(q)
+"""
