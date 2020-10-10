@@ -27,7 +27,7 @@ class Solution(object):
     
     # I am sure there is a more elegant way to handle this, but I value time to solve better 
     # Two Pointer: O(n^3)
-    # Space: O(n^3)
+   
     
         ## hashset 
         output = []
@@ -48,7 +48,7 @@ class Solution(object):
     
     ## hashset: 
     # time: O(n^3)
-    # space: O(n^3)
+    # space: O(n)
     
     
     
