@@ -9,3 +9,6 @@ group by t1.Score) t2
 on s.Score = t2.Score
 order by `Rank`
 
+####
+select Score, dense_rank() over (order by Score desc) as `Rank` from 
+Scores s 
